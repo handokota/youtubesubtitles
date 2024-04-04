@@ -1,0 +1,47 @@
+/* HIDE LATEST POST */
+
+/* #content.ytd-rich-item-renderer ytd-post-renderer.ytd-rich-item-renderer, #content.ytd-rich-item-renderer ytd-shared-post-renderer.ytd-rich-item-renderer {
+  display: none;
+}
+
+ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-renderer {
+  display: none;
+}
+
+#content.ytd-rich-section-renderer > *.ytd-rich-section-renderer {
+  display: none;
+} */
+
+/* CLOSED CAPTIONS */
+
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NetflixSans-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/NetflixSans-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+span.captions-text {
+  margin-bottom: 5em;
+}
+
+span.captions-text span.caption-visual-line span.ytp-caption-segment {
+  color: white !important;
+  font-weight: bolder !important;
+  background: transparent !important;
+  text-shadow: 0px 0px 7px #000000 !important;
+  font-family: 'Netflix Sans' !important;
+  line-height: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.iv-branding .branding-img-container img {
+  display: none !important;
+}

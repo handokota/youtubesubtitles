@@ -1,0 +1,41 @@
+{
+  "name": "YouTube Subtitle",
+  "default_locale": "en",
+  "description": "__MSG_description_ext__",
+  "author": "handokota",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "*://*.youtube.com/*"
+    ],
+    "css": [
+      "src/inject/content_styles.css"
+    ],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+  "homepage_url": "https://github.com/handokota/youtubesubtitle",
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.otf"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
