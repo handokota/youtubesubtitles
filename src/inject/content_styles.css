@@ -14,7 +14,7 @@ ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-rendere
 
 /* CLOSED CAPTIONS */
 
-@font-face {
+/* @font-face {
   font-family: 'Netflix Sans';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/NetflixSans-Bold.otf');
   font-weight: bold;
@@ -24,6 +24,20 @@ ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-rendere
 @font-face {
   font-family: 'Netflix Sans';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/NetflixSans-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Medium.otf');
   font-weight: 500;
   font-style: normal;
 }
@@ -37,7 +51,7 @@ span.captions-text span.caption-visual-line span.ytp-caption-segment {
   font-weight: bolder !important;
   background: transparent !important;
   text-shadow: 0px 0px 7px #000000 !important;
-  font-family: 'Netflix Sans' !important;
+  font-family: 'SF Pro Text' !important;
   line-height: normal !important;
   -webkit-font-smoothing: antialiased !important;
 }
