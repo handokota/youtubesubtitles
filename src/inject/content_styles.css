@@ -30,14 +30,16 @@ ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-rendere
 
 @font-face {
   font-family: 'SF Pro Text';
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Bold.otf');
+  /* src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Bold.otf'); */
+  src: url('moz-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF Pro Text';
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Medium.otf');
+  /* src: url('chrome-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Medium.otf'); */
+  src: url('moz-extension://__MSG_@@extension_id__/fonts/SF-Pro-Text-Medium.otf');
   font-weight: 500;
   font-style: normal;
 }
